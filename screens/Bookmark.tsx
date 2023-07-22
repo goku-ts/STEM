@@ -3,15 +3,15 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 
-const Home=() => {
+const Bookmark=() => {
   return (
   <View style={styles.container}>
-    <Text>Home</Text>
+    <Text>Bookmark</Text>
   </View>
   );
 }
 
-export default Home
+export default Bookmark
 
 const styles = StyleSheet.create({
   container: {

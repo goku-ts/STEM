@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Tabs from './navigation/tabs';
 import Home from './screens/Home';
-import Profile from './screens/Profile';
+import Profile from './screens/Science';
 import theme from './constants/theme';
 
 import { createStackNavigator } from "@react-navigation/stack";

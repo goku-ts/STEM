@@ -3,15 +3,15 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 
-const Home=() => {
+const Technology=() => {
   return (
   <View style={styles.container}>
-    <Text>Home</Text>
+    <Text>Technology</Text>
   </View>
   );
 }
 
-export default Home
+export default Technology
 
 const styles = StyleSheet.create({
   container: {
