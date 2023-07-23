@@ -8,6 +8,8 @@ import { icons, COLORS } from "../constants";
 import Profile from "../screens/Profile";
 import Settings from "../screens/Settings";
 
+import { scale } from "react-native-size-matters";
+
 const Tab = createBottomTabNavigator();
 
 
@@ -20,7 +22,7 @@ const Tabs = () => {
                 headerShown: false,
                 headerShadowVisible: false,
                 tabBarStyle: {
-                    height: "10%",
+                    height: scale(50),
                     paddingLeft: 10,
                     paddingRight: 10,
                     elevation: 0,

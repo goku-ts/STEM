@@ -34,8 +34,8 @@ const styles = ScaledSheet.create({
         elevation :5
     },
     imageView: {
-        width: "150@ms" ,
-        height: "150@ms"
+        width: "120@ms" ,
+        height: "120@ms"
     },
     textView: {
         justifyContent: "center",
