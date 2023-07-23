@@ -4,13 +4,9 @@ import {
 } from 'react-native';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../screens/Home";
-import Science from "../screens/Science";
-import Technology from "../screens/Technology";
-import Engineering from "../screens/Engineering";
-import Maths from "../screens/Maths";
-import Bookmark from "../screens/Bookmark";
 import { icons, COLORS } from "../constants";
-import Profile from "../screens/Science";
+import Profile from "../screens/Profile";
+import Settings from "../screens/Settings";
 
 const Tab = createBottomTabNavigator();
 
@@ -25,11 +21,11 @@ const Tabs = () => {
                 headerShadowVisible: false,
                 tabBarStyle: {
                     height: "10%",
-                    paddingLeft: 20,
-                    paddingRight: 20,
+                    paddingLeft: 10,
+                    paddingRight: 10,
                     elevation: 0,
                     shadowOpacity: 0,
-                    borderTopWidth: 0,
+                    borderTopWidth: 0.5,
                 },
                 tabBarIcon: ({ focused }) => {
                     const tintColor = focused ? COLORS.black : COLORS.lightGray4;
@@ -48,33 +44,8 @@ const Tabs = () => {
                                 />
                             )
 
-                        case "Science":
-                            return (
-                                <Image
-                                    source={icons.science_icon}
-                                    resizeMode="contain"
-                                    style={{
-                                        tintColor: tintColor,
-                                        width: 25,
-                                        height: 25
-                                    }}
-                                />
-                            )
-
-                        case "Technology":
-                            return (
-                                <Image
-                                    source={icons.tech_icon}
-                                    resizeMode="contain"
-                                    style={{
-                                        tintColor: tintColor,
-                                        width: 25,
-                                        height: 25
-                                    }}
-                                />
-                            )
-
-                        case "Engineering":
+                    
+                        case "Settings":
                             return (
                                 <Image
                                     source={icons.eng_icon}
@@ -87,23 +58,12 @@ const Tabs = () => {
                                 />
                             )
 
-                        case "Maths":
-                            return (
-                                <Image
-                                    source={icons.maths_icon}
-                                    resizeMode="contain"
-                                    style={{
-                                        tintColor: tintColor,
-                                        width: 25,
-                                        height: 25
-                                    }}
-                                />
-                            )
+                        
 
-                        case "Bookmark":
+                        case "User":
                             return (
                                 <Image
-                                    source={icons.bookmark_icon}
+                                    source={icons.user_icon}
                                     resizeMode="contain"
                                     style={{
                                         tintColor: tintColor,
@@ -121,25 +81,14 @@ const Tabs = () => {
                 component={Home}
             />
             <Tab.Screen
-                name="Science"
-                component={Science}
+                name="Settings"
+                component={Settings}
             />
             <Tab.Screen
-                name="Technology"
-                component={Technology}
+                name="User"
+                component={Profile}
             />
-            <Tab.Screen
-                name="Engineering"
-                component={Engineering}
-            />
-            <Tab.Screen
-                name="Maths"
-                component={Maths}
-            />
-            <Tab.Screen
-                name="Bookmark"
-                component={Bookmark}
-            />
+           
         </Tab.Navigator>
     )
 }

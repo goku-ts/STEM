@@ -1,22 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { COLORS } from '../constants';
 
 
-const Maths=() => {
+const Settings=() => {
   return (
   <View style={styles.container}>
-    <Text>Maths</Text>
+    <Text>Settings</Text>
   </View>
   );
 }
 
-export default Maths
+export default Settings
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: COLORS.lightGray2,
     alignItems: 'center',
     justifyContent: 'center',
   },

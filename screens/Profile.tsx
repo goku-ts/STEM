@@ -1,22 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { COLORS } from '../constants';
 
 
-const Engineering=() => {
+const Profile=() => {
   return (
   <View style={styles.container}>
-    <Text>Engineering</Text>
+    <Text>Profile</Text>
   </View>
   );
 }
 
-export default Engineering
+export default Profile
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: COLORS.lightGray2,
     alignItems: 'center',
     justifyContent: 'center',
   },

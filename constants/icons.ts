@@ -5,10 +5,10 @@ export const eng_icon = require("../assets/icons/eng.png");
 export const bookmark_icon = require("../assets/icons/bookmark.png");
 export const science_icon = require("../assets/icons/science.png");
 export const tech_icon = require("../assets/icons/tech.png");
-
+export const user_icon = require("../assets/icons/user.png");
 
 export default {
-
+    user_icon,
     back_arrow_icon,
     bookmark_icon,
     eng_icon,
