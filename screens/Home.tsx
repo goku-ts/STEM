@@ -37,7 +37,7 @@ const styles = ScaledSheet.create({
     backgroundColor: COLORS.lightGray2,
   },
   header: {
-    height: "50@ms",
+    height: "40@ms",
     backgroundColor: COLORS.white,
     marginBottom: "15@ms"
   },
