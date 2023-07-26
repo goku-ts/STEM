@@ -10,10 +10,11 @@ import { images } from '../constants';
 type CardType = {
     image: any,
     name: string
+    onpress?: any
 }
-const Card: FC<CardType> = ({ image,name}) => {
+const Card: FC<CardType> = ({ image, name, onpress }) => {
     return (
-        <TouchableOpacity activeOpacity={0.8} style={styles.card}>
+        <TouchableOpacity activeOpacity={0.8} style={styles.card} onPress={onpress}>
             <View style={styles.img_view}>
                 <Image source={image} style={styles.imageView} />
             </View>
@@ -30,11 +31,13 @@ const styles = ScaledSheet.create({
         backgroundColor: COLORS.white,
         height: SIZES.height * 0.28,
         width: SIZES.width * 0.45,
-        borderRadius : "15@ms",
-        elevation :5
+        borderRadius: "15@ms",
+        elevation: 5,
+        shadowOpacity: 0.1,
+        shadowOffset: { width: -2, height: 4 }
     },
     imageView: {
-        width: "120@ms" ,
+        width: "120@ms",
         height: "120@ms"
     },
     textView: {
